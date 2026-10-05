@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>简约计算器</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <main class="app-layout">
+  <div class="calculator">
+
+    <div class="display-wrap">
+      <input
+        id="display"
+        class="display"
+        type="text"
+        value="0"
+        readonly
+      />
+    </div>
+
+    <div class="keys">
+      <button
+        class="key function"
+        data-action="clear"
+        type="button"
+      >
+        C
+      </button>
+
+      <button
+        class="key function"
+        data-action="delete"
+        type="button"
+      >
+        ⌫
+      </button>
+
+      <button
+        class="key function"
+        data-value="("
+        type="button"
+      >
+        (
+      </button>
+
+      <button
+        class="key function"
+        data-value=")"
+        type="button"
+      >
+        )
+      </button>
+
+      <button class="key" data-value="7" type="button">7</button>
+      <button class="key" data-value="8" type="button">8</button>
+      <button class="key" data-value="9" type="button">9</button>
+      <button class="key operator" data-value="/" type="button">÷</button>
+
+      <button class="key" data-value="4" type="button">4</button>
+      <button class="key" data-value="5" type="button">5</button>
+      <button class="key" data-value="6" type="button">6</button>
+      <button class="key operator" data-value="*" type="button">×</button>
+
+      <button class="key" data-value="1" type="button">1</button>
+      <button class="key" data-value="2" type="button">2</button>
+      <button class="key" data-value="3" type="button">3</button>
+      <button class="key operator" data-value="-" type="button">−</button>
+
+      <button class="key" data-value="0" type="button">0</button>
+      <button class="key" data-value="." type="button">.</button>
+      <button class="key operator" data-value="+" type="button">+</button>
+      <button class="key equal" data-action="equals" type="button">=</button>
+    </div>
+
+  </div>
+
+
+  <!-- =========================
+       计算历史
+       ========================= -->
+  <section class="history">
+
+    <div class="history-header">
+      <h2>Calculation History</h2>
+      <button
+        id="refresh-history"
+        class="history-refresh"
+        type="button"
+      >
+        ↻
+      </button>
+    </div>
+
+    <div id="history-list" class="history-list">
+      <p class="history-empty">Loading...</p>
+    </div>
+
+  </section>
+
+  </main>
+
+</body>
+</html>

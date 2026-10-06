@@ -6,8 +6,7 @@ const display = document.getElementById("display");
 // 如果以后重新创建 Cloudflare Tunnel，
 // 只需要修改这一行即可。
 const API_BASE_URL =
-    "https://along-charity-rome-recommend.trycloudflare.com";
-
+    "https://calculator-backend-production-527f.up.railway.app";
 
 let expression = "";
 let justEvaluated = false;

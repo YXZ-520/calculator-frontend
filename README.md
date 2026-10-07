@@ -1,28 +1,42 @@
-# 简易网页版计算器
+# Web Calculator Frontend
 
-这是一个简单的网页版计算器项目，旨在提供基本的计算功能，包括加、减、乘、除等操作。该项目的设计简约，易于使用。
+## Project Overview
 
-## 项目结构
+This project is the frontend of a simple web-based calculator developed using HTML, CSS and JavaScript.
 
-```
-calculator-app
-├── index.html      # 网页的主结构，包含计算器的布局和基本的HTML元素
-├── styles.css      # 定义网页的样式，确保计算器的外观简约且美观
-├── script.js       # 包含计算器的逻辑，实现基本的计算功能
-└── README.md       # 项目的文档，说明如何使用计算器以及项目的基本信息
-```
+The application follows a frontend-backend separated architecture. The frontend is responsible for user interaction and interface display, while all final calculations are processed by the Java Spring Boot backend through REST APIs.
 
-## 使用说明
+## Online Demo
 
-1. 打开 `index.html` 文件以在浏览器中查看计算器。
-2. 输入数字并点击相应的运算符按钮进行计算。
-3. 结果将显示在输入框中。
+https://yxz-520.github.io/calculator-frontend/
 
-## 功能
+## Features
 
-- 支持基本的数学运算：加法、减法、乘法和除法。
-- 简约的用户界面，易于操作。
+- Addition, subtraction, multiplication and division
+- Continuous expression calculation
+- Operator precedence
+- Parentheses
+- Decimal numbers
+- Negative numbers
+- Error handling
+- Calculation history display
+- Delete calculation history
+- Responsive web interface
+- Frontend-backend communication using Fetch API and JSON
 
-## 贡献
+## Technologies
 
-欢迎任何形式的贡献！如果您有建议或发现问题，请提交问题或拉取请求。
+- HTML5
+- CSS3
+- JavaScript
+- Fetch API
+- GitHub Pages
+
+## Project Structure
+
+```text
+calculator-frontend/
+├── index.html
+├── styles.css
+├── script.js
+└── README.md
